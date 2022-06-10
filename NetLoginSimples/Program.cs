@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using NetLoginSimples.Areas.Identity.Data;
+
+
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("AplicacaoDbContextConnection") ?? throw new InvalidOperationException("Connection string 'AplicacaoDbContextConnection' not found.");
 
